@@ -1,0 +1,103 @@
+
+#gameContent{
+ margin:auto;
+ width:600px;
+ height:280px;
+ position:relative;
+ overflow:hidden;
+ background-color:#2ac56c;
+}
+
+#gameContent1{
+ margin:auto;
+ width:600px;
+ height:280px;
+ position:relative;
+ overflow:hidden;
+ background-color:#2ac56c;
+}
+
+#pixHolder{
+ margin-left:30px;
+ width:75px;
+ float:left;
+ overflow:hidden;
+}
+
+#pixHolder img{
+ position:relative;}
+ 
+ #pixHolder1{
+ margin-left:30px;
+ width:75px;
+ float:left;
+ overflow:hidden;
+}
+
+#pixHolder1 img{
+ position:relative;}
+
+
+
+
+@media screen and (max-width:800px) {
+
+ #gameContent{
+	 margin:1%;
+	 width:98%;
+ }
+ 
+  #gameContent1{
+	 margin:1%;
+	 width:98%;
+ }
+ 
+ .tile{
+	 height:20px;
+	 width:20px;
+	 font-size:14px;
+ }
+}
+
+@media screen and (max-width:560px) {
+
+ #pixHolder{
+	 margin-top:50px;
+	 margin-left:10px;
+	 position:absolute;
+ }
+ 
+  #pixHolder1{
+	 margin-top:50px;
+	 margin-left:10px;
+	 position:absolute;
+ }
+
+
+}
+@keyframes glassesDown {
+0% {
+  top:-250px;
+}
+100% {
+  top:-142px;
+}
+}
+#glasses {
+width:50px;
+position:relative;
+left:0px;
+animation:glassesDown 3s linear forwards paused;
+z-index:5;
+}
+#track1{
+	float:right;
+	margin:auto;
+	padding-right: 20px;
+}
+
+#track11{
+	float:right;
+	margin:auto;
+	padding-right: 20px;
+}

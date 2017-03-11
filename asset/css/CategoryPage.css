@@ -1,0 +1,86 @@
+    #categoryPageHeader
+        {
+             background:white;
+height: 80px;   
+         align-content: center;   
+    
+}
+        
+ #categoryPageHeader h1 {
+     
+/*	font-family: Papyrus;*/
+	font-size: 27px;
+	font-style: oblique;
+	font-weight: bold;
+	line-height: 33.6px;
+   color: darkgreen;
+    text-shadow:  #26EC7A 2px 2px, #26EC7A 2px 2px, #26EC7A 2px 2px;
+    text-align: center;
+}
+
+/*
+        #CAtegoryPage #backbtn,#backbtn2
+        {
+            width: 50px;
+            height: 30px;
+            border-style: none;
+        }
+*/
+        #CAtegoryPage #backButton,#backButton2
+        {
+
+            width: 7%;
+            height: 2%;
+            border-style: none;
+        }
+
+
+ #CAtegoryPage #backButton2:before, #backButton:before
+{ content: "\2190";
+font-size: 27px;
+}
+
+#AllCategories
+{
+    
+    overflow-y: visible;
+}
+
+.categorisClass
+{
+    border-radius: 2px;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}
+#EnglishCategoriesID option,#ArabicCategoriesID option
+{
+    
+     color: darkgreen;
+     font-family: Papyrus;
+	font-size: 15px;
+	text-align: center;
+vertical-align: middle;
+}
+/*
+ #CAtegoryPageHeader option
+{
+    color: darkblue;
+    
+     font-family: Papyrus;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 33.6px;
+            text-align: center;
+            text-decoration-color: blue;
+
+}
+*/
+
+/*
+ #CAtegoryPageHeader option:first-child{
+  color:deepskyblue;
+     
+}*/
+
+

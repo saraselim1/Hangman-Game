@@ -1,50 +1,290 @@
 <!DOCTYPE HTML>
 <html>
-<!-- head part -->
-
-<head>
+<header>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="javascript project" />
-	<meta name="author" content="yasmeen" />
 	<title>Hangman game</title>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" type="text/css" href="../css/default.css" />
-	<link rel="stylesheet" type="text/css" href="../css/component.css" />
-	<script type="text/javascript" src="../js/index.js"></script>
-	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-</head>
-<!-- head part -->
-
+	<link rel="stylesheet" type="text/css" href="../css/component.css" /> 
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<!--	  Yasmeen-->
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.dropdown.js"></script>
+	<script type='text/javascript' src='../js/categoriesPage.js'></script>
+	<link rel="stylesheet" type="text/css" href="../css/CategoryPage.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style3.css" />
+	<link rel="stylesheet" type="text/css" href="../css/arabicboard.css" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	
+	
+    
+	<script src="../js/modernizr.custom.63321.js"></script>
+	<script src="../js/index.js"></script>
+	<script src="../js/arabicboard.js"></script>
+	<script src="../js/englishboard.js"></script>
+	<script src="../js/utilities.js"></script>
+	<script src="../js/english_json.js"></script>
+	<script src="../js/arabic_json.js"></script>
+	<script src="../js/controller.js"></script>
+	
+	
+	<script>
+		
+		$(function()
+		{
+			$('#cd-dropdown').dropdown({
+				gutter: 55
+				, delay: 300
+				, rotated: 'left'
+			});
+		});
+		
+	</script>
+<!---->
+	</header>
+	
+	
+	
 <body>
-	<!--Start Mostafa -->
-	<!--End Mostafa -->
-	<!--Start Yasmeen -->
-	<!--End Yasmeen -->
-	<!--Start Sara -->
-	<div class="container">
-		<!-- Top Navigation -->
-		<header>
-			<h1>Hangman Game<span> Guss the word and save the man </span></h1> </header>
-		<section class="color-6">
-			<p class="perspective">
-				<button class="btn btn-8 btn-8g">New Game</button>
-			</p>
-			<p class="perspective">
-				<button class="btn btn-8 btn-8g">How to play</button>
-			</p>
-			<br />
-			<p class="perspective">
-				<button class="btn btn-8 btn-8g">High score</button>
-			</p>
-			<p class="perspective">
-				<button class="btn btn-8 btn-8g">About</button>
-			</p>
-		</section>
+	<!-- Start sara		-->
+<div data-role="page" id="homePage" class="container">
+		<div data-role="header">
+			<header class="Container-header">
+				<h1 class="container-header-h1">Hangman Game<span class="container-header-span"> 
+			Geuss the word and save the man </span></h1> </header>
+		</div>
+		<div data-role="content">
+			<section class="container-section">
+				<object data="../images/hangman.svg" type="image/svg+xml" style="float: right; width: 200px;"></object>
+<!--					<img src="../images/hangman.svg" style="float: right; width: 200px;">-->
+				<div class="button-wrapper">
+					<a href="#CAtegoryPage" data-transition="slideup">
+						<button class="a-btn" id="newGameBtn"> <span class="a-btn-text">New Game</span> <span class="a-btn-slide-text">let's play</span> </button>
+					</a>
+					<a href="#howToPlay" data-transition="flip">
+						<button class="a-btn" id="howtoPlayBtn"> <span class="a-btn-text">How to play</span> <span class="a-btn-slide-text"></span> </button>
+					</a>
+					<!-- <button class="a-btn" id="highScoreBtn"> <span class="a-btn-text">High score</span> <span class="a-btn-slide-text"></span> </button>  -->
+					<a href="#about" data-transition="flip">
+						<button class="a-btn" id="aboutBtn"> <span class="a-btn-text">About</span> <span class="a-btn-slide-text"></span> </button></a>
+				</div>
+			</section>
+		</div>
 	</div>
-	<!--End Sara -->
-	<!--Start Moamen -->
-	<!--End Moamen -->
-	<!--Start Ali -->
-	<!--End Ali -->
+	
+	<div data-role="page" id="howToPlay">
+		<div data-role="header">
+			<header class="Container-header">
+				<h1 class="container-header-h1">Hangman Game<span class="container-header-span"> 
+			How To Play </span></h1> </header>
+		</div>
+		
+  <div data-role="content">
+			<section class="container-section">
+				  <p><span class="a-btn-text">To save the man you need to click new game choose the language and categry you prefer then guss the word</span></p>
+					  <a href='#' data-rel='back' data-iconpos='left' data-role='button' data-inline='true'>Ok</a>
+	  </section>
+   </div>
+
+</div>
+	
+		<div data-role="page" id="about">
+			<div data-role="header">
+				<header class="Container-header">
+					<h1 class="container-header-h1">Hangman Game<span class="container-header-span"> 
+				About </span></h1> </header>
+			</div>
+				
+			<div data-role="content">
+						<section class="container-section">
+							  <p>
+								  <span class="a-btn-text">Yasmien</span>
+								  <span class="a-btn-text">Ali</span>
+								  <span class="a-btn-text">Moameen</span>
+								  <span class="a-btn-text">Mostafa</span>
+								  <span class="a-btn-text">Sara</span>
+							</p>
+				  <a href='#' data-rel='back' data-iconpos='left' data-role='button' data-inline='true'>Ok</a>
+				  </section>
+			</div>
+
+			</div>
+	
+   
+	<!-- End sara	-->
+	<!-- Strat Yasmeen		-->
+	<div data-role="page" id="CAtegoryPage">
+		
+		<div data-role="header">
+			<header class="Container-header">
+				<h1 class="container-header-h1">Hangman Game<span class="container-header-span"> 
+			Geuss the word and save the man </span></h1> </header>
+		</div>
+		
+		<div data-role="content" >
+			<section class="container-section" >
+				<div>
+					
+					<div id="AllCategories" style="overflow: visible; text-align: center;">
+						<select id="cd-dropdown" class="cd-select" name="allcat">
+							<option value="-1" selected>Select Category</option>
+							<option value="1" id="arabic">Arabic</option>
+							<option value="2" id="english">English</option>
+						</select>  
+					</div>
+					
+				</div>
+				<div style="display:none;" id="ArabicCategories">
+					<div id="backButton">
+<!--						<button type="button" id="backbtn" ></button>-->
+					</div>
+                       
+
+					<div class="">
+						<div>
+							<select id="ArabicCategoriesID" onchange='drawArabicKeyboard(this.value); goToArabicGamePage(this.value); gameScreen1();' >
+								<option value="-1" >اختر تصنيف</option>
+								<option value="1">افلام</option>
+								<option value="2">رياضة</option>
+								<option value="3">فن</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div style="display:none;" id="englisCategories">
+					<div id="backButton2">
+<!--                        <button type="button" id="backbtn2"></button>-->
+					</div>
+					<div class="">
+						<div>
+							<select id="EnglishCategoriesID" onchange='drawEnglishKeyboard(this.value); goToEnglishGamePage(this.value); gameScreen();' >
+								<option id='' value="-1" >select category</option>
+								<option id='englishmovie' value="1"   > Movie </option>
+								<option id='englishsports' value="2"  >Sports</option>
+								<option id='englishart' value="3"  >Art</option>
+							</select>
+						</div>
+				
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<!-- End Yasmeen	-->
+	
+	
+	<!-- our team start -->
+		
+	<!-- arabic html page  -->	
+	<!-- arabic html page  -->	
+		
+	<div data-role="page" id="arabicgamepage" >
+		<div data-role="header">
+			<header class="Container-header">
+				<h1 class="container-header-h1">Hangman Game<span class="container-header-span"> 
+			Geuss the word and save the man </span></h1> 
+			</header>
+		</div>
+		
+		<div data-role="content">
+				<section class="container-section">
+					
+					
+					<div id="container">
+			
+						
+						<h3 id='arabichint' ></h3>
+						<br>
+						<ul id="keyboard1">
+							
+
+						</ul>
+
+
+						<div id="guesses1" class="guesses">
+							
+							
+								
+						</div>
+						
+						<div id='gameContent1' >
+							
+						</div>
+						
+					
+					</div>
+					
+					<a href='#'  data-iconpos='left' data-role='button' data-icon='arrow-l' onclick="goToCategoryPage();  " data-inline='true'>Back To Category</a>
+					<a href='#' id=''  data-iconpos='right' data-role='button' data-icon='arrow-r'  data-inline='true' onclick="newMystery1();  clearManContent();   gameScreen1(); ">New Mystery</a>
+
+					
+				</section>
+		</div>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<!-- english html page  -->
+	<!-- english html page  -->
+	<div data-role="page" id="englishgamepage" >
+		
+		<div data-role="header">
+			<header class="Container-header">
+				<h1 class="container-header-h1">Hangman Game<span class="container-header-span"> 
+			Geuss the word and save the man </span></h1> 
+			</header>
+		</div>
+		
+		<div data-role="content" >
+			<section class="container-section">
+					<h3 id='englishhint' ></h3>
+					<div id="container">
+						
+						
+						<ul id="keyboard">
+							
+							
+
+						</ul>
+
+
+						<div id="guesses" class="guesses">
+							
+								
+						</div>
+						
+						<div id='gameContent' >
+							
+						</div>
+						
+
+
+					</div>
+					
+					<a href='#'  data-iconpos='left' data-role='button' data-icon='arrow-l' onclick="goToCategoryPage();  " data-inline='true'>Back To Category</a>
+					<a href='#' id=''  data-iconpos='right' data-role='button' data-icon='arrow-r'  data-inline='true' onclick="newMystery(); clearManContent();   gameScreen();  ">New Mystery</a>
+					
+					
+			</section>
+		<!--	<script></script> -->
+		</div>
+		
+	</div>
+	
+	
+	<!-- our team end -->
+	
+	
+	
 </body>
 
 </html>
